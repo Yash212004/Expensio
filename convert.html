@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/footer.css">
+    <link rel="stylesheet" href="./convert.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="./public/images/logo.png" width="80px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a class="nav-link" href="./index.html">Home</a></li>
+					<li><a class="nav-link" href="./aboutus.html">About</a></li>
+					<li><a class="nav-link" href="./traveltips.html">Traveling Tips</a></li>
+					<li><a class="nav-link" href="./contact.html">ContactUs</a></li>
+                </ul>
+                <div class="btn-group">
+                    <a class="nav-link dropdown-toggle logout" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                    </a>
+                        <li><a class="dropdown-item" href="./logout">Logout</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br><div class="converter-container">
+        <h1>Currency Converter</h1>
+        
+        <form id="converter-form">
+            <!-- Amount Input -->
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" class="input-field" placeholder="e.g., 100" required>
+
+            <!-- From Currency Selector -->
+            <label for="from-currency">Convert From:</label>
+            <select id="from-currency" class="dropdown">
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+            </select>
+
+            <!-- To Currency Selector -->
+            <label for="to-currency">Convert To:</label>
+            <select id="to-currency" class="dropdown">
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+            </select>
+
+            <!-- Convert Button -->
+            <button type="button" onclick="convertCurrency()" class="convert-button">Convert</button>
+        </form>
+
+        <!-- Display the Conversion Result -->
+        <div id="result" class="result-display">Converted Amount: --</div>
+    </div><br><br><br><br>
+    <footer>
+        <div class="footer-content">
+            <h3>Travel Expenses Tracker</h3>
+        
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-menu">
+                <ul class="f-menu">
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="traveltips.html">Traveling Tips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>
+                copyright &copy;
+                <a href="#">Travel Expenses Tracker All Rights Reserves.</a>
+            </p>
+        </div>
+    </footer>
+    <script src="./convert.js"></script>
+</body>
+</html>

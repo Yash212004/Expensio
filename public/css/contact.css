@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    left: auto;
+    width: 1080px;
+
+}
+
+.form {
+    width: 500px;
+    margin: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    width: 500px;
+    text-align: center;
+}
+
+/* .btn {
+
+    margin-right: 30px;
+} */
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    /* border-radius: 5px; */
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: 1px solid black;
+}
+
+.textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    /* border-radius: 5px; */
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: 1px solid black;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+
+.navbar-nav {
+    display: flex !important;
+    gap: 25px !important; /* Adjust spacing */
+  }
+  
+  .navbar-nav .nav-link {
+    margin: 0 15px !important;
+    padding: 10px 15px !important;
+  }
+  
+  
+  /* Navbar styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black !important;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .navbar .container-fluid {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a, #navbarSupportedContent .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .navbar-collapse {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to move to the next line if needed */
+    justify-content: center; /* Centers content */
+    align-items: center; /* Aligns vertically */
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1080px;
+    gap: 20px; /* Adds spacing between form and contact-info */
+}
+
+.form, .contact-info {
+    min-width: 45%; /* Ensures both take up space without shrinking */
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .form, .contact-info {
+        width: 100%; /* Take full width on smaller screens */
+        text-align: center;
+    }
+}
+
+body {
+    padding-top: 80px; /* Adjust according to the navbar height */
+}
+
+main {
+    margin-top: 80px; /* Pushes content below the navbar */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to move to the next line if needed */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1080px;
+    gap: 20px; /* Adds spacing between form and contact-info */
+}
+
+.form {
+    min-width: 45%; /* Ensures it takes up proper space */
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info {
+    min-width: 45%; /* Ensures proper spacing */
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Ensure form elements are aligned properly */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align elements */
+}
+
+input, textarea {
+    width: 100%; /* Make inputs and textarea take full width */
+    max-width: 400px; /* Limit maximum width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    max-width: 200px; /* Button width */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .form, .contact-info {
+        width: 100%; /* Full width on smaller screens */
+        text-align: center;
+    }
+
+    input, textarea {
+        max-width: 100%;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.message {
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+    border-radius: 5px;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+

@@ -1,0 +1,327 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.expense-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.label-name {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    width: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select option {
+    padding: 10px;
+}
+
+select:focus {
+    border: 1px solid #4CAF50;
+}
+
+
+button {
+    border-radius: 20px;
+    border: 1px solid #2a785b;
+    background-color: #2a785b;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+button:hover {
+    background-color: #5456a7;
+}
+
+@media (max-width: 600px) {
+    .expense-form {
+        width: 90%;
+    }
+}
+
+
+.main {
+
+    width: 50vw;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-radius: 5px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    color: white;
+}
+
+label {
+
+    font-size: 20px;
+}
+
+
+
+
+
+#finalAmount {
+
+    font-family: 'Lobster', cursive;
+
+    display: none;
+
+    margin: 50px auto;
+}
+
+
+#finalAmount h2 {
+
+    font-size: 50px;
+}
+
+.finalValue {
+
+    font-family: 'Amiri', serif;
+}
+
+
+@media (max-width: 768px) {
+
+    hr {
+
+        width: 60%;
+
+    }
+
+
+    .main {
+
+        width: 100%;
+
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .heading {
+
+        font-size: 60px;
+
+    }
+
+
+    hr {
+
+        width: 75%;
+
+    }
+
+
+    #finalAmount h2,
+
+    .finalValue {
+
+        font-size: 40px;
+
+    }
+}
+
+.navbar-nav {
+  display: flex !important;
+  gap: 25px !important; /* Adjust spacing */
+}
+
+.navbar-nav .nav-link {
+  margin: 0 15px !important;
+  padding: 10px 15px !important;
+}
+
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black !important;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.navbar .container-fluid {
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a, #navbarSupportedContent .nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.navbar-collapse {
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Fix overlapping issue due to navbar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding-top: 80px; /* Adjust to avoid navbar overlap */
+}
+
+/* Ensure main container is well-aligned */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Set proper width for sections */
+.budget-section,
+.expense-section,
+.clear-section {
+    background-color: #4f8edb;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; /* Adjust for better alignment */
+    text-align: center;
+}
+
+/* Ensure inputs and buttons fit well */
+input, select, button {
+    width: 100%;
+    max-width: 400px; /* Prevent stretching */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Fix overlapping issue in transaction table */
+.transaction-table {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #3a4a5d;
+    text-align: center;
+}
+
+/* Fix button styling */
+button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.clear-section button {
+    background-color: #f44336;
+}
+
+/* Center the chart */
+.chart-section {
+    margin: 30px auto;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Align overview stats properly */
+.overview {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Fix Navbar Issues */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black !important;
+}
+
+.navbar-nav {
+    display: flex !important;
+    gap: 25px !important;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 15px !important;
+    padding: 10px 15px !important;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .transaction-table {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .chart-section {
+        width: 100%;
+    }
+}

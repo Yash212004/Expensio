@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.Travel_Tips {
+  display: flex;
+  align-items: center;
+  padding: 90px 0;
+  background: #e7eff1;
+}
+
+.pic {
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+  align-items: left;
+}
+
+.Travel {
+  width: 1500px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  width: 700px;
+}
+
+.text h2 {
+  color: #623d0a;
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text h5 {
+  color: #2a785b;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span {
+  color: #2a785b;
+}
+
+.text p {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+
+}
+
+
+.navbar-nav {
+  display: flex !important;
+  gap: 25px !important; /* Adjust spacing */
+}
+
+.navbar-nav .nav-link {
+  margin: 0 15px !important;
+  padding: 10px 15px !important;
+}
+
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black !important;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.navbar .container-fluid {
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a, #navbarSupportedContent .nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.navbar-collapse {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-brand img {
+  height: 78.5px; /* Adjust this value as needed */
+  width: auto; /* Maintains aspect ratio */
+  max-height: 80px; /* Ensures it doesn't exceed a certain height */
+}
+

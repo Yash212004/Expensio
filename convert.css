@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* Adjust for navbar */
+    width: 100%;
+}
+
+/* Converter Container */
+.converter-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+/* Input Field */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Dropdown */
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Convert Button */
+.convert-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color:#2a785b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.convert-button:hover {
+    background-color: #2a785b;
+}
+
+/* Result Display */
+.result-display {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.navbar-nav {
+    display: flex !important;
+    gap: 25px !important; /* Adjust spacing */
+  }
+  
+  .navbar-nav .nav-link {
+    margin: 0 15px !important;
+    padding: 10px 15px !important;
+  }
+  
+  
+  /* Navbar styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black !important;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .navbar .container-fluid {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a, #navbarSupportedContent .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .navbar-collapse {
+    width: 100%;
+    justify-content: space-between;
+  }
+  

@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 120px auto 50px; /* Increased top margin */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add spacing between the "Add Trip" heading and form elements */
+h1 {
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    width: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select option {
+    padding: 10px;
+}
+
+select:focus {
+    border: 1px solid #4CAF50;
+}
+
+
+button {
+    border-radius: 20px;
+    border: 1px solid #2a785b;
+    background-color: #2a785b;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+/* Add space between form inputs */
+.form-group {
+    margin-bottom: 15px; /* Increases gap between form fields */
+}
+
+button:hover {
+    background-color: #5456a7;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin-top: 140px; /* More margin for smaller screens */
+    }
+}
+
+.navbar-nav {
+    display: flex !important;
+    gap: 25px !important; /* Adjust spacing */
+  }
+  
+  .navbar-nav .nav-link {
+    margin: 0 15px !important;
+    padding: 10px 15px !important;
+  }
+  
+  
+  /* Navbar styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black !important;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .navbar .container-fluid {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a, #navbarSupportedContent .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  .navbar-collapse {
+    width: 100%;
+    justify-content: space-between;
+  }
+  

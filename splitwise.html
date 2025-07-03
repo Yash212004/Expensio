@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Expense Split Calculator</title>
+    <link rel="stylesheet" href="./splitwise.css">
+    <link rel="stylesheet" href="/public/css/footer.css" />
+</head>
+<body>
+    <br><BR><br>
+    <div class="container">
+        <h1>Group Expense Split Calculator</h1>
+
+        <div id="memberSection">
+            <h2>Group Members</h2>
+            <form id="memberForm">
+                <input type="text" id="memberName" placeholder="Enter member name" required>
+                <button type="submit">Add Member</button>
+            </form>
+            <ul id="memberList"></ul>
+        </div>
+        
+        <div id="transactionSection"></div>
+
+        <div id="expenseSection">
+            <h2>Add Expense</h2>
+            <form id="expenseForm">
+                <input type="number" id="expenseAmount" placeholder="Amount" required>
+                <select id="payerName" required>
+                    <option value="">Select Payer</option>
+                </select>
+                <input type="text" id="expenseDescription" placeholder="Description (optional)">
+                <button type="submit">Add Expense</button>
+            </form>
+            <ul id="expenseList"></ul>
+        </div>
+
+        <div id="summarySection">
+            <h2>Summary</h2>
+            <button id="calculateButton">Calculate Balances</button>
+            <table id="summaryTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Total Contribution</th>
+                        <th>Share</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody id="summaryBody"></tbody>
+            </table>
+        </div>
+
+        <button id="resetButton">Reset</button>
+    </div><br><br><br><br>
+
+    <script src="./splitwise.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Travel Expenses Tracker</h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-menu">
+                <ul class="f-menu">
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="traveltips.html">Traveling Tips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>
+                copyright &copy;
+                <a href="#">Travel Expenses Tracker All Rights Reserves.</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

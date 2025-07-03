@@ -1,0 +1,360 @@
+/* Reset body and prevent horizontal overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 60px; /* Adjust according to navbar height */
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black !important;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.navbar .container-fluid {
+    padding: 0;
+    width: 100%;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a, #navbarSupportedContent .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar-collapse {
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Welcome section */
+.welcome {
+    background: url("../images/frontPoster.jpg") center/cover no-repeat;
+    width: 100%;
+    max-width: 100vw;
+    height: 770px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Welcome text */
+.welcome-text {
+    flex: 1;
+    text-align: center;
+    color: white;
+    background-color: #9a856e;
+    font-size: 1cm;
+    height: 700px;
+    width: 100%;
+    padding: 20px 20px 0;
+    padding-top: 20%;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.welcome-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.welcome-text p {
+    font-family: "Indie Flower", cursive;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.welcome-text p.show {
+    opacity: 1;
+}
+
+/* Generic container styling */
+.container {
+    max-width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section styles */
+.section-2, .section-3 {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+/* About Us & Travel Tips Section */
+.about-us, .travel-tips {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-content, .about-us-image, .travel-tips-content, .travel-tips-image {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.travel-tips-image {
+    text-align: right;
+}
+
+.about-us img, .travel-tips img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Read More Links */
+.read-more {
+    color: #2a785b;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* FontAwesome Icons */
+i {
+    font-family: "FontAwesome";
+    font-style: normal;
+}
+
+/* Text Animation */
+.text-part {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    display: block;
+}
+
+.text-part.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    display: flex !important;
+    gap: 25px !important; /* Adjust spacing */
+}
+
+.navbar-nav .nav-link {
+    margin: 0 15px !important;
+    padding: 10px 15px !important;
+}
+
+/* Ensure navbar is fixed properly */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black !important;
+    height: 80px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+}
+
+/* Push the main content down to avoid overlap */
+.welcome {
+    margin-top: 80px; /* Same as navbar height */
+    height: 770px;
+    background: url("../images/frontPoster.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Global Styles */
+.benefits-section body {
+    width:100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Benefits Section */
+.benefits-section .benefits-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Header */
+.benefits-section .benefits-header {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.benefits-section .benefits-header .icon {
+    font-size: 30px;
+    color: #ffae00;
+    margin-right: 10px;
+}
+
+/* Content */
+.benefits-section .benefits-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Image */
+.benefits-section .benefits-image {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Ticket Card */
+.benefits-section .ticket-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+/* Left Side */
+.benefits-section .ticket-left {
+    background: #ffae00;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits-section .ticket-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Right Side */
+.benefits-section .ticket-right {
+    padding: 20px;
+    background: #f9f9f9;
+    flex-grow: 1;
+}
+
+.benefits-section .ticket-right h3 {
+    margin-top: 0;
+}
+
+.benefits-section .ticket-right p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button */
+.benefits-section .plan-trip-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.benefits-section .plan-trip-btn:hover {
+    background: #333;
+}
+
+.benefits-section .container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.benefits-section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; /* Adjust spacing */
+    align-items: center;
+}
+
+.benefits-section .benefit-item {
+    display: flex;
+    width: 100%; /* Full width */
+    align-items: center;
+    gap: 20px;
+}
+
+.benefits-section .benefit-image {
+    flex: 1; /* Allows it to resize */
+    max-width: 50%; /* Adjust as needed */
+}
+
+.benefits-section .benefit-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.benefits-section html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits-section .main-container {
+    min-height: 100vh; /* Covers the full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefits-section .Head2{
+    text-align: center !important;
+    padding-bottom: 3%;
+    display: block;
+    text-align: center !important;
+    font-size: 1.5cm;
+    width: 100%;
+}

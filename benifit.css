@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+    width:100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Benefits Section */
+.benefits-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Header */
+.benefits-header {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.benefits-header .icon {
+    font-size: 30px;
+    color: #ffae00;
+    margin-right: 10px;
+}
+
+/* Content */
+.benefits-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Image */
+.benefits-image {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Ticket Card */
+.ticket-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+/* Left Side */
+.ticket-left {
+    background: #ffae00;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Right Side */
+.ticket-right {
+    padding: 20px;
+    background: #ececec;
+    flex-grow: 1;
+}
+
+.ticket-right h3 {
+    margin-top: 0;
+}
+
+.ticket-right p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button */
+.plan-trip-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.plan-trip-btn:hover {
+    background: #333;
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+.benefits-section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; /* Adjust spacing */
+    align-items: center;
+}
+.benefit-item {
+    display: flex;
+    width: 100%; /* Full width */
+    align-items: center;
+    gap: 20px;
+}
+
+.benefit-image {
+    flex: 1; /* Allows it to resize */
+    max-width: 50%; /* Adjust as needed */
+}
+
+.benefit-content {
+    flex: 1;
+    max-width: 50%;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    min-height: 100vh; /* Covers the full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
